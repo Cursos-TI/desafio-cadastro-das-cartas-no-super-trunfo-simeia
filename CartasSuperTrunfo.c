@@ -92,3 +92,17 @@ int main() {
     printf("Estado: %c\nCodigo: %s\nCidade: %s\n", estado2, codigo2, cidade2);
     printf("Populacao: %lu\nArea: %.2f\nPIB: %.2f\nPontos: %d\n", pop2, area2, pib2, pontos2);
     printf("Densidade: %.2f\nPIB per capita: %.2f\nSuper Poder: %.2f\n", dens2, pibcap2, super2);
+
+    // ---- comparacoes (1 = Carta 1 venceu, 0 = Carta 2 venceu)
+    // Regra especial: densidade MENOR vence; demais MAIOR vence.
+    printf("\n=== Comparacao de Cartas ===\n");
+    printf("Populacao: %d\n", (pop1 > pop2));
+    printf("Area: %d\n", (area1 > area2));
+    printf("PIB: %d\n", (pib1 > pib2));
+    printf("Pontos Turisticos: %d\n", (pontos1 > pontos2));
+    printf("Densidade (menor vence): %d\n", (dens1 < dens2));
+    printf("PIB per Capita: %d\n", (pibcap1 > pibcap2));
+    printf("Super Poder: %d\n", (super1 > super2));
+
+    return 0;
+}
